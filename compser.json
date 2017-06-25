@@ -1,0 +1,17 @@
+{
+    "name": "bootphp/functions",
+    "description": "Basic Utility Functions for PHP Development",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lalit Tanwar",
+            "email": "lalit.tanwar07@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "bootphp\\": ""
+    },
+    "require": {}
+}
