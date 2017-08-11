@@ -8,15 +8,29 @@
 
 namespace bootphp {
 
+    /**
+     * Class fn
+     *
+     * @package bootphp
+     */
     class fn
     {
-        static function println()
+        /**
+         * Prints one argument per line
+         * @param $str
+         */
+        static function println($str)
         {
             foreach (func_get_args() as $ar) {
                 echo "\n" . $ar;
             }
         }
 
+        /**
+         *  Prints one argument per line in javascript comments format
+         *
+         * @param $str
+         */
         static function printjs($str)
         {
             echo "\n/*  ";
@@ -26,11 +40,29 @@ namespace bootphp {
             echo "\n */";
         }
 
+        /**
+         *  Prints one argument per line with html break
+         *
+         * @param $str
+         */
         static function printbr($str)
         {
-            $args = func_get_args();
-            call_user_func_array('printf', $args);
+            foreach (func_get_args() as $ar) {
+                echo "<br/>" . $ar;
+            }
             print "<br/>";
+        }
+
+        /**
+         *   Prints one argument per line with html comment format
+         *
+         * @param $str
+         */
+        static function printhtml($str)
+        {
+            foreach (func_get_args() as $ar) {
+                echo "<!-- " . $ar." -->";
+            }
         }
 
     }
