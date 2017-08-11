@@ -15,9 +15,9 @@ namespace bootphp {
             return str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $str);
         }
 
-        public static function clean($str)
+        public static function clean($path)
         {
-            return str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $str);
+            return str_replace('\\', '/', $path);
         }
 
 
