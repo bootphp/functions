@@ -35,9 +35,26 @@ project::$REQUEST_QUERY  ==  id=78
 project::$REQUEST_FILE_EXT  ==  json
 ```
 
+## fn
+
+[Api Docs](DOCS.md#class-bootphpfn)
+
+
+## cokiee
+
+[Api Docs](DOCS.md#class-bootphpcookie)
+
+## str
+
+[Api Docs](DOCS.md#class-bootphpstr)
+
 ## file
 
+[Api Docs](DOCS.md#class-bootphpfile)
 
 
-
-
+## Command & Link
+```$xslt
+./lib/bin/phpdoc-md generate bootphp\\fn,bootphp\\str,bootphp\\cookie,bootstrap\\file > lib/bootphp/functions/DOCS.md
+```
+Will generate [DOCS](DOCS.md)
